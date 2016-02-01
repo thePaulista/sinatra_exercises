@@ -9,17 +9,20 @@ get '/' do
 end
 
 get '/about' do
+  @title = "All About This Website"
   erb :about
 end
 
 get '/contact' do
+  @title = "Pajeon with extra octopus"
   erb :contact
 end
 
 get '/portfolio' do
+  @title = "Kimchi jjigae"
   erb :portfolio
 end
 
-not_found do 
+not_found do
   erb :not_found
 end

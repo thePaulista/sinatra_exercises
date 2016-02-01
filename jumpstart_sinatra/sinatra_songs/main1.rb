@@ -10,7 +10,11 @@ get '/about' do
 end
 
 get '/contact' do
-  erb :contact
+  erb :contact, :layout => :special
+end
+
+get '/portfolio' do
+  erb :portfolio
 end
 
 __END__
@@ -32,6 +36,7 @@ __END__
         <li><a href="/" title="Home">Home</a></li>
         <li><a href="/about" title="About">About</a></li>
         <li><a href="contact" title="Contact">Contact</a></li>
+        <li><a href="portfolio" title="Portfolio">Portfolio</a></li>
       </ul>
     </nav>
   </heade>
@@ -48,3 +53,9 @@ __END__
 
 @@contact
 <p>You can contact me by sending an email to daz at gmail.com</p>
+
+@@special
+<p>This is special</p>
+
+@@portfolio
+<p>Here's what I have done:</p>

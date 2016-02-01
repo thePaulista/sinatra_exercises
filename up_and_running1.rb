@@ -15,5 +15,5 @@ __END__
   </head>
   <body>
     <h3>inline example</h3>
-  </body>
+</body> !
 </html>
